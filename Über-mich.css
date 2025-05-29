@@ -1,0 +1,156 @@
+/* Basis-Einstellungen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 16px; /* 1rem = 16px */
+}
+
+/* Navigation */
+nav {
+    background-color: #23327B;
+    padding: 1.25rem; /* 20px */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12.5rem; /* 200px */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.125rem; /* 18px */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    background-color: #354DC5;
+    color: white;
+    padding: 6.25rem 1.25rem; /* 100px 20px */
+    font-size: 3.75rem; /* 60px */
+    text-align: center;
+}
+
+/* Hauptcontainer */
+.Container1 {
+    background-color: #23327B;
+    padding: 3.125rem 1.25rem; /* 50px 20px */
+    color: white;
+}
+
+/* Oberer Bereich: Bild + Tabelle */
+.oben {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3.125rem; /* 50px */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Bild */
+img {
+    height: 18.875rem; /* 302px */
+    width: 13.25rem;  /* 212px */
+    border-radius: 0.9375rem; /* 15px */
+    border: 0.1875rem solid #000; /* 3px */
+    margin-top: 1.25rem; /* 20px */
+}
+
+/* Tabelle */
+.Tabelle-Hintergrund {
+    background-color: #69BAF7;
+    padding: 1.25rem; /* 20px */
+    min-width: 21.875rem; /* 350px */
+    max-width: 31.25rem; /* 500px */
+    width: 100%;
+    box-shadow: 0 0 0.625rem rgba(0,0,0,0.2); /* 10px Schatten */
+    color: black;
+}
+
+h3 {
+    background-color: #C2E5FF;
+    text-align: center;
+    border: 0.125rem solid black; /* 2px */
+    margin: 0 0 0.9375rem 0; /* 15px unten */
+    padding: 0.625rem; /* 10px */
+    margin-left: 1.875rem; /* 30px */
+    margin-right: 1.875rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 0.125rem solid black;
+}
+
+th {
+    background-color: #C2E5FF;
+    border: 0.125rem solid black;
+    padding: 0.625rem; /* 10px */
+    text-align: left;
+    font-size: 1rem;
+}
+
+/* Unterer Bereich: Lebenslauf */
+.unten {
+    margin-top: 3.125rem; /* 50px */
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 0.9375rem; /* 15px */
+    font-size: 1.75rem; /* 28px */
+    color: white;
+    background-color: #354DC5;
+    margin-left: 1.875rem; /* 30px */
+    margin-right: 1.875rem;
+    padding: 0.75rem; /* 12px */
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 2.5rem; /* 40px */
+    text-align: left;
+    display: inline-block;
+    color: white;
+    margin: 1.875rem; /* 30px */
+    font-size: 1.5rem;
+}
+
+/* Footer (wenn du einen einfügst) */
+footer {
+    background-color: #354DC5;
+    padding: 3.125rem; /* 50px */
+}
+
+/* Responsive: Mobile Geräte */
+@media (max-width: 768px) {
+    html {
+        font-size: 15px; /* kleiner skalieren für mobile */
+    }
+
+    header {
+        font-size: 2.25rem; /* ca. 36px */
+        padding: 3.75rem 1.25rem; /* 60px 20px */
+    }
+
+    .oben {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    a {
+        font-size: 1rem;
+        margin: 0.3125rem; /* 5px */
+    }
+}
