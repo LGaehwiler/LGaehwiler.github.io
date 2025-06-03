@@ -1,14 +1,12 @@
-/* Reset & Grundstyles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    color: white; /* Standardtextfarbe */
-    background-color: #23327B; /* Hintergrund für den Body */
+    color: white;
+    background-color: #23327B; 
 }
 
-/* Navigation */
 nav {
     background-color: #23327B;
     padding: 20px;
@@ -22,7 +20,7 @@ a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.125 rem;
     transition: text-decoration 0.3s ease;
 }
 
@@ -30,24 +28,21 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Header */
 header {
     background-color: #354DC5;
     padding: 100px 20px;
-    font-size: 60px;
+    font-size: 3.75 rem;
     text-align: center;
 }
 
-/* Überschriften */
 h2 {
     background-color: #23327B;
     padding: 10px 20px;
-    margin: 30px 270px; /* Oben/Unten 30px, links/rechts 100px */
+    margin: 30px 270px;
     border: 4px solid black;
     text-align: center;
 }
 
-/* Tabellen */
 table {
     background-color: #23327B;
     width: 100%;
@@ -67,6 +62,7 @@ th {
     padding: 10px;
     font-family: 'Adamina', serif;
 }
+
 .SpalteSozialStern {
     padding: 10px;
     padding-right: 33px;
@@ -80,7 +76,6 @@ th {
     color: white;
 }
 
-/* HR-Element */
 hr {
     border: none;
     height: 4px;
@@ -89,8 +84,70 @@ hr {
     border-radius: 2px;
 }
 
-/* Footer */
 footer {
     background-color: #354DC5;
     padding: 50px;
 }
+
+@media (max-width: 1024px) {
+    nav {
+      gap: 60px;
+      padding: 1rem;
+    }
+    a {
+      font-size: 1rem;
+    }
+    header {
+      font-size: 2.5rem;
+      padding: 4rem 1rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      padding: 0 1rem;
+    }
+    table.TabelleWebsite {
+      width: 90%;
+      font-size: 1rem;
+    }
+    .SpalteWebsite {
+      padding: 0.5rem;
+    }
+    .gelberstern, .normalstern {
+      font-size: 1.2rem;
+    }
+    footer {
+      padding: 30px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    nav {
+      gap: 20px;
+      padding: 0.75rem;
+    }
+    a {
+      font-size: 0.9rem;
+    }
+    header {
+      font-size: 1.8rem;
+      padding: 3rem 1rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+      padding: 0 0.5rem;
+    }
+    table.TabelleWebsite {
+      width: 100%;
+      font-size: 0.9rem;
+    }
+    .SpalteWebsite {
+      padding: 0.3rem;
+    }
+    .gelberstern, .normalstern {
+      font-size: 1rem;
+    }
+    footer {
+      padding: 20px;
+    }
+  }
+  

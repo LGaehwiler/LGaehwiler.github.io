@@ -17,7 +17,7 @@ nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 12.5rem; /* 200px */
+    gap: 200px; /* 200px */
 }
 
 a {
@@ -80,77 +80,141 @@ img {
 h3 {
     background-color: #C2E5FF;
     text-align: center;
-    border: 0.125rem solid black; /* 2px */
-    margin: 0 0 0.9375rem 0; /* 15px unten */
-    padding: 0.625rem; /* 10px */
-    margin-left: 1.875rem; /* 30px */
-    margin-right: 1.875rem;
+    border: 2px solid black; 
+    margin: 0 0 15px 0; 
+    padding: 10px; 
+    margin-left: 30px; 
+    margin-right: 30px;
 }
 
 table {
     border-collapse: collapse;
     width: 100%;
-    border: 0.125rem solid black;
+    border: 2px solid black;
 }
 
 th {
     background-color: #C2E5FF;
-    border: 0.125rem solid black;
-    padding: 0.625rem; /* 10px */
+    border: 2px solid black;
+    padding: 10px;
     text-align: left;
     font-size: 1rem;
 }
 
-/* Unterer Bereich: Lebenslauf */
 .unten {
-    margin-top: 3.125rem; /* 50px */
+    margin-top: 50px;
     text-align: center;
 }
 
 h2 {
-    margin-bottom: 0.9375rem; /* 15px */
-    font-size: 1.75rem; /* 28px */
+    margin-bottom: 15px;
+    font-size: 28px;
     color: white;
     background-color: #354DC5;
-    margin-left: 1.875rem; /* 30px */
-    margin-right: 1.875rem;
-    padding: 0.75rem; /* 12px */
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 12px;
 }
 
 ul {
     list-style-type: disc;
-    padding-left: 2.5rem; /* 40px */
+    padding-left: 40px;
     text-align: left;
     display: inline-block;
     color: white;
-    margin: 1.875rem; /* 30px */
+    margin: 30px;
     font-size: 1.5rem;
 }
 
-/* Footer (wenn du einen einfügst) */
 footer {
     background-color: #354DC5;
-    padding: 3.125rem; /* 50px */
+    padding: 50px;
 }
 
-/* Responsive: Mobile Geräte */
-@media (max-width: 768px) {
-    html {
-        font-size: 15px; /* kleiner skalieren für mobile */
+@media (max-width: 1024px) {
+    nav {
+      gap: 50px;
+      padding: 1rem;
     }
-
     header {
-        font-size: 2.25rem; /* ca. 36px */
-        padding: 3.75rem 1.25rem; /* 60px 20px */
+      font-size: 2.5rem;
+      padding: 4rem 1rem;
     }
-
     .oben {
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
     }
-
+    img {
+      height: 15rem;
+      width: 10rem;
+    }
+    .Tabelle-Hintergrund {
+      min-width: auto;
+      max-width: 100%;
+      width: 90%;
+    }
+    h3 {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      padding: 0.5rem;
+    }
+    ul {
+      font-size: 1.125rem;
+      margin: 1rem;
+      padding-left: 2rem;
+    }
+    .unten {
+      margin-top: 2rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    nav {
+      gap: 20px;
+      padding: 0.75rem;
+    }
     a {
-        font-size: 1rem;
-        margin: 0.3125rem; /* 5px */
+      font-size: 1rem;
     }
-}
+    header {
+      font-size: 2rem;
+      padding: 3rem 1rem;
+    }
+    .oben {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    img {
+      height: 12rem;
+      width: 8rem;
+      margin-top: 0.5rem;
+    }
+    .Tabelle-Hintergrund {
+      padding: 1rem;
+      width: 95%;
+    }
+    h3 {
+      margin: 0;
+      padding: 0.5rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+      margin: 0 1rem;
+      padding: 0.4rem;
+    }
+    ul {
+      font-size: 1rem;
+      margin: 1rem 0.5rem;
+      padding-left: 1.5rem;
+    }
+    .unten {
+      margin-top: 1.5rem;
+    }
+  }
+  
