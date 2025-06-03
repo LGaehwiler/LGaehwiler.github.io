@@ -18,7 +18,7 @@ a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.125 rem;
+    font-size: 1.125rem;
 }
 
 a:hover {
@@ -29,7 +29,7 @@ header {
     background-color: #354DC5;
     color: white;
     padding: 100px 20px;
-    font-size: 3.75 rem;
+    font-size: 3.75rem;
     text-align: center;
 }
 
@@ -55,7 +55,7 @@ header {
 .content-wrapper p {
     max-width: 800px;
     line-height: 1.8;
-    font-size: 1.125 rem;
+    font-size: 1.125rem;
     color: white;
     text-align: center;
     font-family: 'Adamina', serif;

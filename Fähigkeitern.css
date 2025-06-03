@@ -20,7 +20,7 @@ a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.125 rem;
+    font-size: 1.125rem;
     transition: text-decoration 0.3s ease;
 }
 
@@ -31,7 +31,7 @@ a:hover {
 header {
     background-color: #354DC5;
     padding: 100px 20px;
-    font-size: 3.75 rem;
+    font-size: 3.75rem;
     text-align: center;
 }
 
